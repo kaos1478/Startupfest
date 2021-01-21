@@ -24,6 +24,11 @@ const Topbar: NextPage = () => {
             <Button variant="primary">Log In</Button>
           </Styled.MenuItem>
         </Styled.Menu>
+        <Styled.Burger>
+          <div />
+          <div />
+          <div />
+        </Styled.Burger>
       </div>
     </Styled.Container>
   )

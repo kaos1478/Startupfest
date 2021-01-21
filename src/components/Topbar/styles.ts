@@ -43,6 +43,9 @@ export const Menu = styled.ul`
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 485px) {
+    display: none;
+  }
 `
 
 export const MenuItem = styled.li`
@@ -56,5 +59,26 @@ export const MenuItem = styled.li`
     letter-spacing: -0.025em;
     color: #cdcdcd;
     text-decoration: none;
+    &:hover {
+      color: #fff;
+    }
+  }
+`
+
+export const Burger = styled.div`
+  display: flex;
+  flex-direction: column;
+  display: none;
+
+  @media screen and (max-width: 485px) {
+    display: block;
+  }
+
+  div {
+    width: 40px;
+    height: 5px;
+    background: #fff;
+    margin-bottom: 5px;
+    border-radius: 2px;
   }
 `
