@@ -2,7 +2,7 @@ import firebase from 'firebase/app'
 import 'firebase/auth'
 import 'firebase/analytics'
 
-// usar as variaveis de ambiente
+// usar as variaveis de ambiente se der tempo
 const firebaseConfig = {
   apiKey: 'AIzaSyCZGHqCeALOmxuZoouzPmwEPMZcuaBE9gc',
   authDomain: 'softable-a681a.firebaseapp.com',
