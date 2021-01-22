@@ -36,14 +36,29 @@ export const Logo = styled.div`
   }
 `
 
-export const Menu = styled.ul`
+interface IMenu {
+  menuToggle: boolean
+}
+
+export const Menu = styled.ul<IMenu>`
   list-style: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 485px) {
+    flex-direction: column;
+    justify-content: flex-start;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+    height: calc(100vh - 77px);
+    width: 50%;
+    background: #111;
+    padding-right: 50px;
     display: none;
+    ${props => props.menuToggle && 'display: flex'}
   }
 `
 
@@ -66,6 +81,25 @@ export const MenuItem = styled.li<IMenuItem>`
       color: #fff;
     }
     ${props => props.acti && 'color: #fff;'}
+  }
+
+  @media screen and (max-width: 485px) {
+    width: 100%;
+    display: block;
+
+    & > a {
+      display: block;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 25px;
+      line-height: 40px;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    & > button {
+      margin-top: 20px;
+    }
   }
 `
 

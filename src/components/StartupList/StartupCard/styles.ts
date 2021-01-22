@@ -22,7 +22,7 @@ interface IHeader {
 export const Header = styled.div<IHeader>`
   width: 100%;
   height: 307px;
-  background-image: url(${props => props.thumbnail}), url('./imgnotfound.jpeg');
+  background-image: url(${props => props.thumbnail}), url('/imgnotfound.jpeg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

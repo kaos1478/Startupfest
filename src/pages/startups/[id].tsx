@@ -3,7 +3,7 @@ import { NextPage } from 'next'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import api from '../../services/api'
-import Header from '../../components/Header'
+import StartupHeader from '../../components/StartupHeader'
 import Content from '../../components/Content'
 import StartupDetails from '../../components/StartupDetails'
 import SplitScreen from '../../components/SplitScreen'
@@ -30,7 +30,7 @@ const Startup: NextPage = () => {
 
   return (
     <>
-      <Header img={startup && startup.thumbnail} />
+      <StartupHeader img={startup && startup.thumbnail} />
       <Content>
         <SplitScreen>
           {startup && (

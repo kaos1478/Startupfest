@@ -13,11 +13,15 @@ export interface IStartupCard {
   thumbnail: string
 }
 
+interface IResponse {
+  startups: IStartupCard[]
+}
+
 const StartupList: NextPage = () => {
   const [startups, setStatups] = useState<IStartupCard[]>([])
 
   useEffect(() => {
-    api.get<IStartupCard[]>('/').then(res => {
+    api.get<IResponse>('/').then(res => {
       console.log(res.data)
       setStatups(res.data.startups)
     })

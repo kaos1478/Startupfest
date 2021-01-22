@@ -1,19 +1,19 @@
 import { NextPage } from 'next'
 import * as Styled from './styles'
 
-interface IHeader {
+interface IStartupHeader {
   title?: string
   subtitle?: string
-  img?: string
+  img: string
 }
 
-const Header: NextPage<IHeader> = ({ title, subtitle }) => {
+const StartupHeader: NextPage<IStartupHeader> = ({ title, subtitle, img }) => {
   return (
-    <Styled.Container>
+    <Styled.Container img={img}>
       <h1>{title || ''}</h1>
       <h2>{subtitle || ''}</h2>
     </Styled.Container>
   )
 }
 
-export default Header
+export default StartupHeader

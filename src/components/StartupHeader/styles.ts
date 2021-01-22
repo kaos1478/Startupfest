@@ -1,9 +1,15 @@
 import styled from 'styled-components'
 import { fadein } from '../../styles/animations'
-export const Container = styled.div`
+
+interface IStyledContainer {
+  img: string
+}
+
+export const Container = styled.div<IStyledContainer>`
   width: 100%;
   height: 284px;
-  background-image: url('./abstractbkg.jpg');
+  ${props =>
+    props.img ? `background-image: url(${props.img});` : 'background: tamoto;'}
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

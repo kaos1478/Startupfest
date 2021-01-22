@@ -7,7 +7,7 @@ import Container from '../components/Container'
 
 const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
   return (
-    <>
+    <div>
       <GlobalStyle />
       <Navbar />
       <Main>
@@ -15,7 +15,7 @@ const MyApp: NextPage<AppProps> = ({ Component, pageProps }) => {
           <Component {...pageProps} />
         </Container>
       </Main>
-    </>
+    </div>
   )
 }
 

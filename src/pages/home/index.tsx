@@ -1,10 +1,10 @@
 import { NextPage } from 'next'
+import { useState } from 'react'
 import { useRouter } from 'next/router'
 import Background from '../../components/Background'
 import Button from '../../components/Button'
 import BackgroundOpacity from '../../components/BackgroundOpacity'
 import Banner from '../../components/Banner'
-
 const Home: NextPage = () => {
   const router = useRouter()
   return (
