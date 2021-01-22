@@ -38,4 +38,8 @@ I sent my firebase credential for test
 
 ## Screens
 
-![alt text](https://imgur.com/YeN5E3Q)
+![alt text](https://i.imgur.com/YeN5E3Q.png)
+
+![alt text](https://i.imgur.com/xT7Q8i3.png)
+
+![alt text](https://i.imgur.com/pVSTgzL.png)
