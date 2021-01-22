@@ -35,3 +35,7 @@ yarn dev
 ## Observation
 
 I sent my firebase credential for test
+
+## Screens
+
+![alt text](https://imgur.com/YeN5E3Q)
