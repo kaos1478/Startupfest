@@ -10,8 +10,9 @@ https://www.figma.com/file/uNkOyWwdLefaWPAJOFAnW8/Untitled?node-id=0%3A1
 
 ## Details
 
-Project Status: incomplete
-Development Time: 16 Hours
+Project Status: incomplete;
+
+Development Time: 16 Hours;
 
 ## How to use
 ```
