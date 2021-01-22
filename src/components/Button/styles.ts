@@ -52,7 +52,7 @@ const ButtonVariants = {
 }
 
 export const Container = styled.button<IButton>`
-  width: 84px;
+  padding: 0px 10px;
   height: 32px;
   border-radius: 11px;
   font-style: normal;

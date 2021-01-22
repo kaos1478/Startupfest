@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-
 export const Container = styled.div`
   width: 100%;
   height: 77px;
@@ -48,7 +47,11 @@ export const Menu = styled.ul`
   }
 `
 
-export const MenuItem = styled.li`
+interface IMenuItem {
+  acti?: boolean
+}
+
+export const MenuItem = styled.li<IMenuItem>`
   margin-left: 31px;
   & > a {
     font-family: Roboto;
@@ -62,6 +65,7 @@ export const MenuItem = styled.li`
     &:hover {
       color: #fff;
     }
+    ${props => props.acti && 'color: #fff;'}
   }
 `
 

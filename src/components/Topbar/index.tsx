@@ -1,7 +1,9 @@
 import { NextPage } from 'next'
+import { useEffect, useState } from 'react'
 import Link from 'next/link'
 import * as Styled from './styles'
 import Button from '../Button'
+import Router from 'next/router'
 
 const Topbar: NextPage = () => {
   return (
@@ -12,13 +14,10 @@ const Topbar: NextPage = () => {
         </Styled.Logo>
         <Styled.Menu>
           <Styled.MenuItem>
-            <Link href="/home">Home</Link>
+            <Link href="/">Home</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
             <Link href="/startups">Startups</Link>
-          </Styled.MenuItem>
-          <Styled.MenuItem>
-            <Link href="/ranking">Ranking</Link>
           </Styled.MenuItem>
           <Styled.MenuItem>
             <Button variant="primary">Log In</Button>

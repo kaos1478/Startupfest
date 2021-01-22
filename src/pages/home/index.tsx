@@ -1,21 +1,38 @@
 import { NextPage } from 'next'
-import * as Styled from './styles'
+import { useRouter } from 'next/router'
 import Background from '../../components/Background'
 import Button from '../../components/Button'
+import BackgroundOpacity from '../../components/BackgroundOpacity'
+import Banner from '../../components/Banner'
 
 const Home: NextPage = () => {
+  const router = useRouter()
   return (
     <Background>
-      <Styled.BackgroundOpacity>
-        <Styled.Banner>
+      <BackgroundOpacity>
+        <Banner>
           <div>Bem vindo(a) a primeira edição da StartUp Fest.</div>
           <div>
-            <Button variant="secundaryBig">Registrar StartUp</Button>
+            <Button
+              onClick={() => {
+                console.log('Opss... Função nao disponível')
+              }}
+              variant="secundaryBig"
+            >
+              Registrar StartUp
+            </Button>
             <div />
-            <Button variant="primaryBig">Visualizar StartUps</Button>
+            <Button
+              variant="primaryBig"
+              onClick={() => {
+                router.push('/startups')
+              }}
+            >
+              Visualizar StartUps
+            </Button>
           </div>
-        </Styled.Banner>
-      </Styled.BackgroundOpacity>
+        </Banner>
+      </BackgroundOpacity>
     </Background>
   )
 }
